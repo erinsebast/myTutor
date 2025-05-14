@@ -1,0 +1,91 @@
+.container {
+    min-height: 100vh;
+    background: radial-gradient(circle at top left, rgba(255, 230, 0, 0.08), #000 80%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .heading {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+  }
+  
+  .subtext {
+    margin-top: 1rem;
+    font-size: 1.125rem;
+    color: #ccc;
+    text-align: center;
+    max-width: 600px;
+  }  
+  
+  .button {
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    background: #FFD700;
+    color: #000;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .button:hover {
+    background: #e6c200;
+  }
+  
+  .glow {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(255,255,0,0.2), transparent 70%);
+    top: -200px;
+    left: -100px;
+    filter: blur(100px);
+    z-index: 0;
+  }
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    border-bottom: 1px solid #333;
+  }  
+  @keyframes pulseGlow {
+    0%, 100% {
+      box-shadow: 0 0 20px #facc15;
+    }
+    50% {
+      box-shadow: 0 0 40px #facc15;
+    }
+  }
+  
+  .glowingButton {
+    animation: pulseGlow 2s ease-in-out infinite;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    gap: 1rem;
+  }
+  
+  .input {
+    padding: 0.75rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  

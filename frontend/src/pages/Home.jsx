@@ -24,7 +24,7 @@ const Home = () => {
           and generate smart study plans personalized to you.
         </p>
         <button
-          onClick={() => navigate('/login')}
+          onClick={() => navigate('/register')}
           className={styles.glowingButton}
           style={{
             marginTop: '2rem',

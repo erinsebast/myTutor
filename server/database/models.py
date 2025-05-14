@@ -20,6 +20,7 @@ class Users(Base):
     email = Column(String(100), nullable=False, unique=True)
     password = Column(String(50), nullable=True)
     major = Column(String(100), nullable=True)
+    classYear = Column(String(100), nullable=True)
     full_name = Column(String(100), nullable=True)
     created_at = Column(DateTime(timezone=True), server_default=func.now())
 
