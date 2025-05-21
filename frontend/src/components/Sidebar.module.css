@@ -1,0 +1,26 @@
+/* Sidebar.module.css */
+.sidebar {
+    width: 200px;
+    background-color: #1c1f2b;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: white;
+  }
+  
+  .sidebar a {
+    color: #e2e8f0;
+    text-decoration: none;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: background 0.2s;
+  }
+  
+  .sidebar a:hover {
+    background-color: #2d3144;
+  }  

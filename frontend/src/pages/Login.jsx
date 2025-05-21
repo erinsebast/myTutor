@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import styles from './Login.module.css'
 import { useNavigate } from 'react-router-dom'
 import Header from '../components/Header.jsx'
+import Dashboard from './Dashboard.jsx'
 import axios from 'axios'
 
 const Login = () => {
@@ -16,21 +17,23 @@ const Login = () => {
     }
 
     const handleSubmit = async (e) => {
-        e.preventDefault()
+      e.preventDefault()
     
-        try {
-          const response = await await axios.post('http://localhost:8000/login', formData, {
-            headers: {
-              'Content-Type': 'application/json'
-            }
-          })          
-          console.log('User logged:', response.data)
-          navigate('/dashboard')
-        } catch (error) {
-          console.error('Log in failed:', error.response?.data || error.message)
-          alert('Could not log in. Check console for details.')
-        }
+      try {
+        const response = await axios.post('http://localhost:8000/login', formData)
+        console.log('User logged in:', response.data)
+    
+        localStorage.setItem('user', JSON.stringify(response.data))
+        //window.location.reload()
+        navigate('/dashboard')
+
+        navigate('/dashboard')
+      } catch (error) {
+        console.error('Log in failed:', error.response?.data || error.message)
+        alert('Could not log in. Check console for details.')
       }
+    }
+    
 
     return (
         <>
