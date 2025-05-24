@@ -82,14 +82,16 @@ const Dashboard = () => {
         <div className={styles.cardGrid}>
           {courses.map(course => (
             <div
-              key={course.course_code}
-              className={styles.courseCard}
-              onClick={() => navigate(`/grades/${course.course_code}`)}
-            >
-              <h3>{course.course_name}</h3>
-              <p>{course.course_code}</p>
-              <p>{course.semester}</p>
-            </div>
+            key={course.course_code}
+            className={styles.courseCard}
+            onClick={() => navigate(`/course/${course.course_code}`)}
+          >
+            <h3>{course.course_name}</h3>
+            <p>{course.course_code}</p>
+            <p>{course.semester}</p>
+          </div>
+          
+            
           ))}
         </div>
       </div>

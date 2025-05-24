@@ -6,6 +6,7 @@ import Register from './pages/Register.jsx'
 import Login from './pages/Login.jsx'
 import Dashboard from './pages/Dashboard.jsx'
 import ViewGrades from './pages/ViewGrades.jsx'
+import CoursePage from './pages/CoursePage.jsx'
 import './global.css' 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -17,6 +18,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/login" element={<Login/>} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/grades/:course_code" element={<ViewGrades />} />
+        <Route path="/course/:course_code" element={<CoursePage />} />
+
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

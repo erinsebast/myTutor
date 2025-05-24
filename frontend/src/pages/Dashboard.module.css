@@ -10,8 +10,8 @@
 }
 
 .addButton {
-  background-color: #facc15;
-  color: black;
+  background: #3b82f6; /* or #60a5fa for a lighter tone */
+color: white;
   font-weight: bold;
   padding: 0.75rem 1.5rem;
   border: none;

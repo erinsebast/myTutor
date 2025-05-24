@@ -44,7 +44,7 @@
     position: absolute;
     width: 600px;
     height: 600px;
-    background: radial-gradient(circle, rgba(255,255,0,0.2), transparent 70%);
+    background: radial-gradient(circle, rgba(59, 130, 246, 0.2), transparent 70%);
     top: -200px;
     left: -100px;
     filter: blur(100px);
@@ -63,12 +63,12 @@
   }  
   @keyframes pulseGlow {
     0%, 100% {
-      box-shadow: 0 0 20px #facc15;
+      box-shadow: 0 0 20px #3b82f6;
     }
     50% {
-      box-shadow: 0 0 40px #facc15;
+      box-shadow: 0 0 40px #3b82f6;
     }
-  }
+  }  
   
   .glowingButton {
     animation: pulseGlow 2s ease-in-out infinite;

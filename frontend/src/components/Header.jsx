@@ -70,8 +70,8 @@ const Header = () => {
         <button
           onClick={() => navigate('/login')}
           style={{
-            backgroundColor: '#facc15',
-            color: 'black',
+            backgroundColor: '#3b82f6',
+            color: 'white',
             padding: '0.5rem 1rem',
             borderRadius: '8px',
             border: 'none',
@@ -86,7 +86,7 @@ const Header = () => {
         <button
           onClick={handleLogout}
           style={{
-            backgroundColor: '#e11d48',
+            backgroundColor: '#1d4ed8',
             color: 'white',
             padding: '0.5rem 1rem',
             borderRadius: '8px',

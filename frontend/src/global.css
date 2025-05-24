@@ -3,7 +3,7 @@ html, body, #root {
     margin: 0;
     padding: 0;
     height: 100%;
-    background: radial-gradient(circle at top left, rgba(255, 230, 0, 0.05), black);
+    background: radial-gradient(circle at top left, rgba(59, 130, 246, 0.08), black); /* #3b82f6 = blue-500 */
     font-family: 'Space Grotesk', sans-serif;
     color: white;
   }

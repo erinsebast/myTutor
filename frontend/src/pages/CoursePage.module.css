@@ -1,0 +1,19 @@
+.container {
+    padding: 3rem;
+    color: white;
+  }
+  
+  .buttonGroup {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .buttonGroup button {
+    background-color: #3b82f6;
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+  }  

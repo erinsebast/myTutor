@@ -24,21 +24,12 @@ const Home = () => {
           and generate smart study plans personalized to you.
         </p>
         <button
-          onClick={() => navigate('/register')}
-          className={styles.glowingButton}
-          style={{
-            marginTop: '2rem',
-            padding: '1rem 2rem',
-            fontSize: '1rem',
-            backgroundColor: '#facc15',
-            color: 'black',
-            border: 'none',
-            borderRadius: '8px',
-            fontWeight: '600'
-          }}
-        >
-          Start Your Journey
-        </button>
+  onClick={() => navigate('/register')}
+  className={`${styles.glowingButton} ${styles.button}`}
+>
+  Start Your Journey
+</button>
+
       </section>
     </div>
   )
